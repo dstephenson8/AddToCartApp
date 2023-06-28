@@ -1,9 +1,19 @@
+:root{
+    --main-font-color: #050517;
+    --main-background: #EEF0F4;
+    --accent-color: #CF5C36;
+    --accent-font-color: #F4E3B2;
+    --list-item-background: #F4E3B2; 
+    --list-item-background-accent: #EFC88B; 
+
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
-    color: #432000;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--main-background);
+    color: var(--main-font-color);
     user-select: none;
 }
 
@@ -20,9 +30,9 @@ img {
 }
 
 input {
-    color: #432000;
-    background-color: #DCE1EB;
-    border: 0;
+    color: var(--main-font-color);
+    background-color: var(--main-background);
+    border: 1px solid black;
     padding: 15px;
     border-radius: 8px;
     font-size: 20px;
@@ -32,8 +42,8 @@ input {
 }
 
 button {
-    color: #FDFDFD;
-    background-color: #AC485A;
+    color: var( --main-font-color);
+    background-color: var( --accent-color);
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -43,7 +53,8 @@ button {
 }
 
 button:hover {
-    background-color: #432000;
+    background-color: var(--main-font-color);
+    color: var(--accent-font-color);
     cursor: pointer;
 }
 
@@ -57,7 +68,7 @@ ul {
 
 ul li {
     font-size: 20px;
-    background-color: #FFFDF8;
+    background-color: var(--list-item-background);
     padding: 15px;
     border-radius: 8px;
     flex-grow: 1;
@@ -66,6 +77,6 @@ ul li {
 }
 
 ul li:hover {
-    background-color: #FFECC7;
+    background-color: var(--list-item-background-accent);
     cursor: pointer;
 }
